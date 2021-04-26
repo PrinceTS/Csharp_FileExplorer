@@ -1,0 +1,7 @@
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\bin\Debug\Csharp_FileExplorer.exe.config
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\bin\Debug\Csharp_FileExplorer.exe
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\bin\Debug\Csharp_FileExplorer.pdb
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\obj\Debug\Csharp_FileExplorer.csprojAssemblyReference.cache
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\obj\Debug\Csharp_FileExplorer.csproj.CoreCompileInputs.cache
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\obj\Debug\Csharp_FileExplorer.exe
+D:\Disk Third\Github\Csharp_FileExplorer\Csharp_FileExplorer\obj\Debug\Csharp_FileExplorer.pdb
