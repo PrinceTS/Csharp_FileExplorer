@@ -249,7 +249,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".mp4") || file.Contains(".mp3") || file.Contains(".wav") || file.Contains(".avi") || file.Contains(".flv") || file.Contains(".mov") || file.Contains(".mpeg") || file.Contains(".wmv"))
+                string asd = file.ToLower();
+                if (asd.Contains(".mp4") || asd.Contains(".mp3") || asd.Contains(".wav") || asd.Contains(".avi") || asd.Contains(".flv") || asd.Contains(".mov") || asd.Contains(".mpeg") || asd.Contains(".wmv"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -280,7 +281,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".png") || file.Contains(".jpg") || file.Contains(".jpeg") || file.Contains(".gif") || file.Contains(".bmp") || file.Contains(".tiff") || file.Contains(".webp"))
+                string asd = file.ToLower();
+                if (asd.Contains(".png") || asd.Contains(".jpg") || asd.Contains(".jpeg") || asd.Contains(".gif") || asd.Contains(".bmp") || asd.Contains(".tiff") || asd.Contains(".webp"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -312,7 +314,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".txt") || file.Contains(".pdf") || file.Contains(".docx") || file.Contains(".ppt") || file.Contains(".pptx") || file.Contains(".rtf") || file.Contains(".tex") || file.Contains(".odt") || file.Contains(".xml") || file.Contains(".doc"))
+                string asd = file.ToLower();
+                if (asd.Contains(".txt") || asd.Contains(".pdf") || asd.Contains(".docx") || asd.Contains(".ppt") || asd.Contains(".pptx") || asd.Contains(".xlsx") || asd.Contains(".rtf") || asd.Contains(".tex") || asd.Contains(".odt") || asd.Contains(".xml") || asd.Contains(".doc"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -343,7 +346,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".blend") || file.Contains(".blend1") || file.Contains(".mdl") || file.Contains(".fbx") || file.Contains(".obj"))
+                string asd = file.ToLower();
+                if (asd.Contains(".blend") || asd.Contains(".blend1") || asd.Contains(".mdl") || asd.Contains(".fbx") || asd.Contains(".obj"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -375,7 +379,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".torrent"))
+                string asd = file.ToLower();
+                if (asd.Contains(".torrent"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -406,8 +411,10 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".zip") || file.Contains(".rar") || file.Contains(".iso"))
+                string asd = file.ToLower();
+                if (asd.Contains(".zip") || asd.Contains(".rar") || asd.Contains(".iso"))
                 {
+                    
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
                     ideiglenesfajl = filesplitted[filesplitted.Length - 1];
@@ -438,7 +445,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".exe"))
+                string asd = file.ToLower();
+                if (asd.Contains(".exe"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -470,7 +478,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".py"))
+                string asd = file.ToLower();
+                if (asd.Contains(".py"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
@@ -500,7 +509,8 @@ namespace Csharp_FileExplorer
             string[] files = Directory.GetFiles(path);
             foreach (string file in files)
             {
-                if (file.Contains(".pkt") || file.Contains(".pka"))
+                string asd = file.ToLower();
+                if (asd.Contains(".pkt") || asd.Contains(".pka"))
                 {
                     string ideiglenesfajl;
                     string[] filesplitted = file.Split('\\');
