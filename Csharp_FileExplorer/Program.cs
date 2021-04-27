@@ -213,15 +213,16 @@ namespace Csharp_FileExplorer
             foreach (string file in files)
             {
                 // Itt lehet bővíteni
-                if (file.Contains(".mp4") || file.Contains(".mp3") || file.Contains(".wav") || file.Contains(".avi") || file.Contains(".flv") || file.Contains(".mov") || file.Contains(".mpeg") || file.Contains(".wmv")) fs.mediafajlok(rootPath, CurrentTime);
-                if (file.Contains(".png") || file.Contains(".jpg") || file.Contains(".jpeg") || file.Contains(".gif") || file.Contains(".bmp") || file.Contains(".tiff") || file.Contains(".webp")) fs.kepek(rootPath, CurrentTime);
-                if (file.Contains(".txt") || file.Contains(".pdf") || file.Contains(".docx") || file.Contains(".ppt") || file.Contains(".pptx") || file.Contains(".rtf") || file.Contains(".tex") || file.Contains(".odt") || file.Contains(".xml") || file.Contains(".doc")) fs.doksik(rootPath, CurrentTime);
-                if (file.Contains(".blend") || file.Contains(".blend1") || file.Contains(".mdl") || file.Contains(".fbx") || file.Contains(".obj")) fs.blender(rootPath, CurrentTime);
-                if (file.Contains(".torrent")) fs.Torrent(rootPath, CurrentTime);
-                if (file.Contains(".py")) fs.Python(rootPath, CurrentTime);
-                if (file.Contains(".exe")) fs.programok(rootPath, CurrentTime);
-                if (file.Contains(".zip") || file.Contains(".rar") || file.Contains(".iso")) fs.Csomagolt(rootPath, CurrentTime);
-                if (file.Contains(".pkt") || file.Contains(".pka")) fs.Network(rootPath, CurrentTime);
+                string asd = file.ToLower();
+                if (asd.Contains(".mp4") || asd.Contains(".mp3") || asd.Contains(".wav") || asd.Contains(".avi") || asd.Contains(".flv") || asd.Contains(".mov") || asd.Contains(".mpeg") || asd.Contains(".wmv")) fs.mediafajlok(rootPath, CurrentTime);
+                if (asd.Contains(".png") || asd.Contains(".jpg") || asd.Contains(".jpeg") || asd.Contains(".gif") || asd.Contains(".bmp") || asd.Contains(".tiff") || asd.Contains(".webp")) fs.kepek(rootPath, CurrentTime);
+                if (asd.Contains(".txt") || asd.Contains(".pdf") || asd.Contains(".docx") || asd.Contains(".ppt") || asd.Contains(".pptx") || asd.Contains(".xlsx") || asd.Contains(".rtf") || asd.Contains(".tex") || asd.Contains(".odt") || asd.Contains(".xml") || asd.Contains(".doc")) fs.doksik(rootPath, CurrentTime);
+                if (asd.Contains(".blend") || asd.Contains(".blend1") || asd.Contains(".mdl") || asd.Contains(".fbx") || asd.Contains(".obj")) fs.blender(rootPath, CurrentTime);
+                if (asd.Contains(".torrent")) fs.Torrent(rootPath, CurrentTime);
+                if (asd.Contains(".py")) fs.Python(rootPath, CurrentTime);
+                if (asd.Contains(".exe")) fs.programok(rootPath, CurrentTime);
+                if (asd.Contains(".zip") || asd.Contains(".rar") || asd.Contains(".iso")) fs.Csomagolt(rootPath, CurrentTime);
+                if (asd.Contains(".pkt") || asd.Contains(".pka")) fs.Network(rootPath, CurrentTime);
             }
         }
     }
